@@ -75,7 +75,6 @@ public class PropondoLanceSteps {
 	
 	@Dado("um lance invalido de {double} reais e do usuario {string}")
 	public void um_lance_invalido_de_reais(Double valor, String nomeUsuario) {
-		System.out.println(nomeUsuario);
 	    this.lance = new Lance(new BigDecimal(valor));
 	}
 	

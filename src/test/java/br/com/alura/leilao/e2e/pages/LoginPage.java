@@ -33,11 +33,6 @@ public class LoginPage {
     public LeiloesPage realizaLoginComoFulano() {
     	return realizaLoginComo("fulano", "pass");
     }
-
-	public boolean estaNaPaginaDeLeiloes() {
-		this.esperaCarregarPaginaDeLeiloes();
-		return this.driver.getCurrentUrl().endsWith("/leiloes");
-	}
 	
 	public void esperaCarregarPaginaDeLeiloes() {
 		WebDriverWait wait = new WebDriverWait(driver,2);

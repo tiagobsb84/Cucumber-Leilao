@@ -25,6 +25,10 @@ public class LeiloesPage {
 		return driver.getCurrentUrl().endsWith("/leiloes") && driver.getPageSource().contains(nomeProduto) && 
 				driver.getPageSource().contains(valor);
 	}
+	
+	public boolean estaNaPaginaDeLeiloes() {
+		return this.driver.getCurrentUrl().endsWith("/leiloes");
+	}
 
 	public NovoLeilaoPage visitaPaginaParaCriarUmNovoLeilao() {
 		
